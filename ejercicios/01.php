@@ -16,6 +16,7 @@ Dentro de body creamos la estructura de php y empezamos.
     <?php 
     $cadena = "Hola Mundo";
     echo $cadena; 
+    print $cadena;
     ?>
 </body>
 </html>
