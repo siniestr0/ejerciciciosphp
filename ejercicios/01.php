@@ -11,8 +11,10 @@
 <!-- ahora en el body ponemos la estructura php para mostrar el contenido -->
 
     <?php 
+
+    // para añadir salto de linea se pone \n
     $cadena = "Hola Mundo";
-    echo $cadena . "esto es un echo\n";
+    echo $cadena . "esto es un echo" . "\n";
     
     print $cadena . "esto es un print";
     ?>
