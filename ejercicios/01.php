@@ -1,6 +1,5 @@
-/** 
-Creamos la estructura normal de un html CODE STUDIO LA CREA SOLO
-*/
+
+<!-- creamos la estructura de un html, al guardar el archivo como php, CODE la genera de forma automatica se escribimos HMTL5 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +8,12 @@ Creamos la estructura normal de un html CODE STUDIO LA CREA SOLO
     <title>Ejercicio1</title>
 </head>
 <body>
-/** 
-Dentro de body creamos la estructura de php y empezamos.
- */
+<!-- ahora en el body ponemos la estructura php para mostrar el contenido -->
 
     <?php 
     $cadena = "Hola Mundo";
     echo $cadena; 
+    "\n";
     print $cadena;
     ?>
 </body>
