@@ -12,8 +12,8 @@
 
     <?php 
     $cadena = "Hola Mundo";
-    echo $cadena . "esto es un echo";
-    "\n";
+    echo $cadena . "esto es un echo\n";
+    
     print $cadena . "esto es un print";
     ?>
 </body>
