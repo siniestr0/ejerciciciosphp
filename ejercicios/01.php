@@ -12,7 +12,7 @@
 
     <?php 
     $cadena = "Hola Mundo";
-    echo $cadena; 
+    
     "\n";
     print $cadena;
     ?>
