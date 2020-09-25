@@ -10,7 +10,7 @@
     $multiplicador = 8;
     echo "tabla del " . $multiplicador . "<br>" ;
    for ($base = 1; $base <= 10; $base++){
-            echo $multiplicador . " x " . " $base " . ($multiplicador * $base) . "<br>";
+            echo $multiplicador . " x " . " $base ". "=". ($multiplicador * $base) . "<br>";
    }
 
     ?>
