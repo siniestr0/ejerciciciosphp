@@ -26,8 +26,13 @@ echo "  <th> Dni </th>";
 echo "  <th> Telefono </th>";
 echo "  <th> Mail </th>";
 echo "</tr>";       // fin de la primera fila
-echo "<tr>";
+echo "<tr>";        //Creamos el contenido de la fila
 echo "<td> $nombre </td>";
+echo "<td> $apellido1 </td>";
+echo "<td> $apellido2 </td>";
+echo "<td> $dni </td>";
+echo "<td> $telefono </td>";
+echo "<td> $mail </td>";
 echo "</table>";
 
     ?>
