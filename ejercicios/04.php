@@ -18,10 +18,10 @@ $valor2=1;
 // se suma el valor anterior al valor siguiente para sacar el siguiente 
 echo $valor1 ." ";
     while ($valor1<=10){  // Aquí sacara los 10 primeros valores
-    
+    // no muestra los 10 primeros valores, solo 7
         echo $valor2 ." ";
-        $valor2 += $valor1;   
-        $valor1 = $valor2 - $valor1;
+        $valor2 += $valor1;   // primero suma y despues asigna
+        $valor1 = $valor2 - $valor1;  // para sumarle el valor anterior, hay que restar el anterior del anterior
     }
     ?>
 
