@@ -7,11 +7,13 @@
 </head>
 <body>
     <?php
-
-    define('SIZE', 10);
-        echo "<table border=1>";
-        
-        echo "</table>";
+ echo "<tr>";
+ for ($cabecera="0";$cabecera<=10;$cabecera++){
+             echo "<th>";
+             echo $cabecera;
+             echo "</th>";
+ }
+ echo "</tr>";
 
     ?>
 </body>
