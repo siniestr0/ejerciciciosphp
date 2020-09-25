@@ -9,7 +9,7 @@
     <?php
     $multiplicador = 8;
     echo "tabla del " . $multiplicador ;
-   for ($base = 1; $base <= 10; $base++){
+   for ($base = 0; $base <= 10; $base++){
             echo $multiplicador . " x " . ($multiplicador * $base) . "<br>";
    }
 
