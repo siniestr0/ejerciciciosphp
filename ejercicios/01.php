@@ -1,22 +1,33 @@
-
-<!-- creamos la estructura de un html, al guardar el archivo como php, CODE la genera de forma automatica se escribimos HMTL5 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio1</title>
+    <title>ejercicio 01</title>
 </head>
 <body>
-<!-- ahora en el body ponemos la estructura php para mostrar el contenido -->
+    <!-- Aqui en el body es donde se pondrá siempre la estructura del php-->
 
-    <?php 
+    <?php
 
-    // para añadir salto de linea se pone \n
-    $cadena = "Hola Mundo ";
-    echo $cadena . "esto es un echo" . "<br>";
-    
-    print $cadena . "esto es un print";
+    $nombre = "Jose Luis";
+    $apellido1 = "Hervas";
+    $apellido2 = "Cruceras";
+    $dni = "22579092S";
+    $telefono = "666000666";
+    $mail = "asd@asd.com";
+
+echo "<table>";     //asi se crea la tabla
+echo "<tr>";        //creamos una columna
+echo "  <th> $nombre  </th>";   //nombre de la columna
+echo "  <th> $apellido1 </th>";
+echo "  <th> $apellido2 </th>";
+echo "  <th> $dni </th>";
+echo "  <th> $telefono </th>";
+echo "  <th> $mail </th>";
+echo "</tr>";       // fin de la primera columna
+echo "</table>";
+
     ?>
 </body>
 </html>
