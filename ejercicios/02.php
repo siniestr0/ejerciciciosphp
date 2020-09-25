@@ -8,13 +8,7 @@
 <body>
     <?php
     echo "<table border = 1>";
-    echo "<tr>";
-        for ($cabecera="0";$cabecera<=10;$cabecera++){ //creamos una lista de numeros hasta el 10 dentro de una tabla
-             echo "<th>";
-             echo $cabecera;
-             echo "</th>";
-     }
-    echo "</tr>";
+  
 /*
 base sera el numero por el que despues sera multiplicado.
 Se crea con un bucle for para que llegue hasta 10, si ponemos mas, pues multipicara por mas
