@@ -17,7 +17,7 @@
     $telefono = "666000666";
     $mail = "asd@asd.com";
 
-echo "<table>";     //asi se crea la tabla
+echo "<table border=1>";     //asi se crea la tabla
 echo "<tr>";        //creamos una fila
 echo "  <th> Nombre  </th>";   //nombre de la fila
 echo "  <th> Apellido1 </th>";
