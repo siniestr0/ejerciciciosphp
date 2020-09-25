@@ -13,7 +13,12 @@
     $valor1 = 0;
     $valor2 = 1;
 
-    
+    for ($i=0; $i <= 10; $i++) { 
+        }
+        $suma = $valor1 + $valor2;
+        $valor1 = $valor2;
+        $valor2 = $suma;
+        echo $suma . " , ";
     ?>
 
 </body>
