@@ -18,13 +18,13 @@
     $mail = "asd@asd.com";
 
 echo "<table>";     //asi se crea la tabla
-echo "<tr>";        //creamos una columna
-echo "  <th> $nombre  </th>";   //nombre de la columna
-echo "  <th> $apellido1 </th>";
-echo "  <th> $apellido2 </th>";
-echo "  <th> $dni </th>";
-echo "  <th> $telefono </th>";
-echo "  <th> $mail </th>";
+echo "<tr>";        //creamos una fila
+echo "  <th> Nombre  </th>";   //nombre de la fila
+echo "  <th> Apellido1 </th>";
+echo "  <th> Apellido2 </th>";
+echo "  <th> Dni </th>";
+echo "  <th> Telefono </th>";
+echo "  <th> Mail </th>";
 echo "</tr>";       // fin de la primera columna
 echo "</table>";
 
