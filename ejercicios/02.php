@@ -7,13 +7,15 @@
 </head>
 <body>
     <?php
- echo "<tr>";
- for ($cabecera="0";$cabecera<=10;$cabecera++){
+    echo "<table border = 1>";
+    echo "<tr>";
+        for ($cabecera="0";$cabecera<=10;$cabecera++){
              echo "<th>";
              echo $cabecera;
              echo "</th>";
- }
- echo "</tr>";
+     }
+    echo "</tr>";
+    echo "</table>"
 
     ?>
 </body>
