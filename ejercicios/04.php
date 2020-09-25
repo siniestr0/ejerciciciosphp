@@ -16,7 +16,7 @@
     for ($i=0; $i <= 10; $i++) { 
         }
         $suma = $valor1 + $valor2;
-        echo $suma;
+        echo $suma ." ";
         $valor1 = $valor2;
         $valor2 = $suma;
         echo $suma . " , ";
