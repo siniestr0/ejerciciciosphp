@@ -13,8 +13,8 @@
     <?php 
 
     // para añadir salto de linea se pone \n
-    $cadena = "Hola Mundo";
-    echo $cadena . "esto es un echo" . "\n";
+    $cadena = "Hola Mundo ";
+    echo $cadena . "esto es un echo" . "<br>";
     
     print $cadena . "esto es un print";
     ?>

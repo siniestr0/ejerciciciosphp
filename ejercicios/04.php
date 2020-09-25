@@ -9,7 +9,7 @@
     <!-- Aqui en el body es donde se pondrá siempre la estructura del php-->
 
     <?php
-
+echo "dibuja una tabla 10x10"
 
     ?>
 </body>
