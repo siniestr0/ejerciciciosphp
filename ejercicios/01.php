@@ -18,6 +18,7 @@
     $mail = "asd@asd.com";
 
 echo "<table border=1>";     //asi se crea la tabla
+// tambien le podemos poner un borde a la tabla
 echo "<tr>";        //creamos una fila
 echo "  <th> Nombre  </th>";   //nombre de la fila
 echo "  <th> Apellido1 </th>";
