@@ -12,7 +12,7 @@
     for ($x = 1; $x <= 10; $x++) {
 
         if ( $x % 3 == 0) {
-         echo $x . "<br>";
+         echo $x . " es divisible por 3 " . "<br>";
         }
     }
 
