@@ -25,7 +25,9 @@ echo "  <th> Apellido2 </th>";
 echo "  <th> Dni </th>";
 echo "  <th> Telefono </th>";
 echo "  <th> Mail </th>";
-echo "</tr>";       // fin de la primera columna
+echo "</tr>";       // fin de la primera fila
+echo "<tr>";
+echo "<td> $nombre </td>";
 echo "</table>";
 
     ?>
