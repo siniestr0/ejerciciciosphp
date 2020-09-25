@@ -8,7 +8,7 @@
 <body>
     <?php
     $multiplicador = 8;
-    echo "tabla del " . $multiplicador ;
+    echo "tabla del "  ;
    for ($base = 0; $base <= 10; $base++){
             echo $multiplicador . " x " . ($multiplicador * $base) . "<br>";
    }
