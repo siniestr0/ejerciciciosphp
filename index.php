@@ -108,10 +108,20 @@
     <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
     Array de más de una dimensión
     </li>
-    
+
     <li>
     <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
-    Array de más de una dimensión
+    Variables suporglobales: $_SERVER
+    </li>
+
+    <li>
+    <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+    Primer formulario: $_GET, $_POST, $_REQUEST
+    </li>
+
+    <li>
+    <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+    Formulario con más cosas...
     </li>
 
   </ol>
