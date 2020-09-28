@@ -19,6 +19,16 @@ $equipo1 = array (
         
     );
 
+
+    //foreach clave->elemento
+echo "Recorrido mediante bucle foreach con posicion->elemento <br>";
+foreach ($equipo1 as $position=>$element){
+    echo $position . ": " . $element . '<br>';
+}
+echo 'añadimos un elemento más y hacemos un volcado: <br>';
+$equipo1['nacionalidad'] = 'Española';
+var_dump($equipo1);
+
 ?>
 
 </body>
