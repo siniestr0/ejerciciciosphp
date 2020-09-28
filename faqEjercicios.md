@@ -91,17 +91,3 @@ Voy a intentar solucionar diversos problemas y dudas sobre la puesta a punto de 
     cd ejercicios
     git remote add rafa git@github.com:rafacabeza/ejerciciciosphp.git
     ```
-
-
-
-
-
-
-
-
-
-¿Cómo borro un remoto? Dos ejemplos:
-    git remote remove rafa
-    git remote remove origin
-
-
