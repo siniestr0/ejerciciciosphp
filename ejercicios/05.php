@@ -9,19 +9,17 @@
     
 <?php
 
-const num1 = 163;
-
-
+const num1 = 169;
 
  
 for($i = 1; $i < num1; $i ++) {
         if (num1 % $i == 0) {
-            echo $i;
-
+            
             echo "num1" . "tiene " . $i . " divisores";
         }
         
 }
+
 
 
 ?>
