@@ -29,6 +29,17 @@ $valor2 = $suma;
 
 // ahora ya tendremos la secuencia finalizada
 
+/*
+1ª vuelta del bucle
+suma almacena la suma de valor1 y valor2
+al Valor1 le asignamos valor2
+    si valor1 es 0, valor2 es 1 valor1 suma 1.
+a valor2 le asignamos suma.
+
+el resultado final de la primera vuelta es 0+1 = 1. y se mestra 1,1
+
+*/
+
 }
 
     ?>
