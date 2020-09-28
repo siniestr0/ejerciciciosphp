@@ -15,7 +15,7 @@ const num1 = 169;
 for($i = 1; $i < num1; $i ++) {
         if (num1 % $i == 0) {
             
-            echo "num1" . "tiene " . $i . " divisores";
+            echo "num1 " . "tiene " . $i . " divisores";
         }
         
 }
