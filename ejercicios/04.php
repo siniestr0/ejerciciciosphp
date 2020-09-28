@@ -18,13 +18,16 @@ for ($i=0; $i <= 10 ; $i++) {
     
 // mostramos valor1
 echo $valor1 . "<br>";
-// ahora creamos la suma de los dos valores
+// ahora creamos la suma de los dos valores que dice la secuencia
 $suma = $valor1 + $valor2;
-//ahora hay que intercambiar los valores para sumar 1
+
+//ahora hay que intercambiar los valores, para más tarde volver a sumarlos
 $valor1 = $valor2;
 
 // para cerrar el circulo, volvemos a asignar el valor2 a la suma de los dos valores
 $valor2 = $suma;
+
+// ahora ya tendremos la secuencia finalizada
 
 }
 
