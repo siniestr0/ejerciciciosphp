@@ -8,8 +8,16 @@
 <body>
     
 <?php
+echo "array()";
 
-
+$equipo1 = array (
+        'nombre' => 'Jordy',
+        'nombre' => 'Jose',
+        'nombre' => 'Elena',
+        'nombre' => 'Ramona',
+        'nombre' => 'Dionis',
+        
+    );
 
 ?>
 
