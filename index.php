@@ -167,6 +167,10 @@
         </li>
       </ul>
     </li>
+    <li>
+    <a href="/ejemplos/<?php printf("%02d", ++$ejemplo);  ?>.php" target="_blank">Ejemplo <?php printf("%02d", $ejemplo);  ?></a>
+    Uso de funciones
+    </li>
   </ol>
 
 </body>
