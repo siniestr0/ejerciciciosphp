@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
     <meta charset="UTF-8">
-    <title>ejemplo 7</title>
+    <title>ejemplo</title>
 </head><body>
     <h2>Formularios & inputs</h2>
     Los tipos básicos de input son: 
@@ -47,16 +47,16 @@
     <h4>Opcíón 1. Bien</h4>
     En un bloque como array. Todos los checkbox el nombre con corchetes. Recibiremos $_POST['aficion'] como un array.
     <pre>
-    &lt;input type="checkbox" name="aficion[]" value="deporte"&gt; Hacer deporte
+    &lt;input type="checkbox" name="aficiones[]" value="deporte"&gt; Hacer deporte
     </pre> 
     <form method="post" action="11action.php">
-        Hobbies:   <br>
+        hobbies:   <br>
 <!--        OJO: si ponemos el mismo nombre con corchetes recibiremos la opción
         múltiple como un array. -->
-        <input type="checkbox" name="aficion[]" value="deporte"> Hacer deporte <br>
-        <input type="checkbox" name="aficion[]" value="musica"> Escuchar música  <br>     
-        <input type="checkbox" name="aficion[]" value="musica"> Lectura  <br>      
-        <input type="checkbox" name="aficion[]" value="cine"> Ir al cine  <br>
+        <input type="checkbox" name="aficiones[]" value="deporte"> Hacer deporte <br>
+        <input type="checkbox" name="aficiones[]" value="musica"> Escuchar música  <br>     
+        <input type="checkbox" name="aficiones[]" value="musica"> Lectura  <br>      
+        <input type="checkbox" name="aficiones[]" value="cine"> Ir al cine  <br>
         <input type="submit" value="enviar">
     </form>
     <br>
@@ -79,8 +79,8 @@
     Importante, el value de cada input es lo que recibimos en el servidor.
     <form method="post" action="11action.php">
         NOTA: bloque sin array y mismo nombre (MAL) <br>
-        <input type="checkbox" name="hobbie" value="musica"> Lectura  <br>      
-        <input type="checkbox" name="hobbie" value="cine"> Ir al cine  <br>
+        <input type="checkbox" name="hobby" value="musica"> Lectura  <br>      
+        <input type="checkbox" name="hobby" value="cine"> Ir al cine  <br>
         <input type="submit" value="enviar">
     </form>
     
@@ -88,14 +88,30 @@
     <h4>Opcíón 3. NO TAN MAL</h4>
     Cada checkbox con un nombre distinto. Recibiremos muchas variables y no un array.
     <pre>
-    &lt;input type="checkbox" name="hobbie1" value="musica"&gt; Lectura 
-    &lt;input type="checkbox" name="hobbie2" value="musica"&gt; Ir al cine
+    &lt;input type="checkbox" name="hobby1" value="musica"&gt; Lectura 
+    &lt;input type="checkbox" name="hobby2" value="musica"&gt; Ir al cine
     </pre> 
 
     <form method="post" action="11action.php">
         NOTA: bloque sin array y distinto nombre (BIEN)<br>
-        <input type="checkbox" name="hobbie1" value="musica"> Lectura  <br>      
-        <input type="checkbox" name="hobbie2" value="cine"> Ir al cine  <br>
+        <input type="checkbox" name="hobby1" value="musica"> Lectura  <br>      
+        <input type="checkbox" name="hobby2" value="cine"> Ir al cine  <br>
         <input type="submit" value="enviar">
-    </form>    
+    </form>   
+    
+    
+
+
+    <hr>
+    <form method="post" action="11action.php">
+        <label for="cars">Elige un coche:</label>
+        <select name="cars[]" id="cars" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
 </body></html>
