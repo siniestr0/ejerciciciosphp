@@ -22,7 +22,8 @@ $equipo1 = array (
 
 
     //foreach clave
-echo "Recorremos el array con un foreach";
+echo "Recorremos el array con un foreach ";
+echo "<br>";
 foreach ($equipo1 as $position => $element){
     echo $position . ": " . $element . '<br>';
 }
