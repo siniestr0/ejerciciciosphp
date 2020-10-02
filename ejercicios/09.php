@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Paises</title>
 </head>
 <body>
     <?php
     //Creamos el array
 
     $paises = [];
-    $equipo1[0]="España";
-    $equipo1[1]="Francia";
-    $equipo1[2]="Rumania";
-    $equipo1[3]="Portugal";
+    $paises[0]="España";
+    $paises[1]="Francia";
+    $paises[2]="Rumania";
+    $paises[3]="Portugal";
 
     echo"<br>";
-    foreach ($equipo1 as $position => $element){
+    foreach ($paises as $position => $element){
 
         echo $position . ": " . $element . '<br>';  
     }
 
-print_r($equipo1);
+    echo "var_dump" . "<br>";
+    var_dump($paises);
+    echo "<br>";
+    echo "print_r" . "<br>";
+    print_r($paises);
 
     ?>
 </body>
