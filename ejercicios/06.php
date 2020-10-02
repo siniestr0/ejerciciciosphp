@@ -12,16 +12,16 @@ echo "array()";
 echo "<br>";
 
 $equipo1 = array (
-        'nombre' => 'Jordy',
-        'nombre' => 'Jose',
-        'nombre' => 'Elena',
-        'nombre' => 'Ramona',
-        'nombre' => 'Dionis',
+        "nombre" => "Jordy",
+        "nombre" => "Jose",
+        "nombre" => "Elena",
+        "nombre" => "Ramona",
+        "nombre" => "Dionis",
         
     );
 
 
-    //foreach clave
+//foreach clave
 echo "Recorremos el array con un foreach ";
 echo "<br>";
 foreach ($equipo1 as $position => $element){
