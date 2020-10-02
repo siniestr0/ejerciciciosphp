@@ -18,7 +18,7 @@
     echo"<br>";
     foreach ($equipo1 as $position => $element){
 
-        echo $position = $element ."<br>";   
+        echo $position . ": " . $element . '<br>';  
     }
 
 print_r($equipo1);
