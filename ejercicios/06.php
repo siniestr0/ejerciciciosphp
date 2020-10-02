@@ -11,17 +11,21 @@
 echo "array()";
 echo "<br>";
 
-$equipo1 = ["Jose " . "Jordy " . "Elena " . "Dionis "];
+$equipo1 = array ("Jose " , "Jordy " , "Elena " , "Dionis ");
 
 
 //foreach clave
 echo "Recorremos el array con un foreach ";
 echo "<br>";
 foreach ($equipo1 as $position => $element){
-    echo $position . ": " . $element . '<br>';
+
+    echo "<li>$position = $element </li> ";
+    
 }
 echo "<br>";
 var_dump($equipo1);
+
+
 
 ?>
 
