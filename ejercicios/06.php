@@ -26,7 +26,7 @@ echo "Recorremos el array con un foreach";
 foreach ($equipo1 as $position => $element){
     echo $position . ": " . $element . '<br>';
 }
-
+echo "<br>";
 var_dump($equipo1);
 
 ?>
