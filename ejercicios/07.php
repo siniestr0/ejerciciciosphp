@@ -20,8 +20,12 @@ foreach ($paises as $position => $element){
     echo $position = $element ."<br>";
     
 }
-echo "<br>";
+
+echo "var_dump" . "<br>";
 var_dump($paises);
+echo "<br>";
+echo "print_r" . "<br>";
+print_r($paises);
 
 ?>
 
