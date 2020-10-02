@@ -11,14 +11,7 @@
 echo "array()";
 echo "<br>";
 
-$equipo1 = array (
-        "nombre" => "Jordy",
-        "nombre" => "Jose",
-        "nombre" => "Elena",
-        "nombre" => "Ramona",
-        "nombre" => "Dionis",
-        
-    );
+$equipo1 = ["Jose " . "Jordy " . "Elena " . "Dionis "];
 
 
 //foreach clave
