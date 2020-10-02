@@ -9,7 +9,7 @@
 
 <?php
 
-$paises = array ("España " , "Francia " , "Rumania " , "Alemania ");
+$paises = array ("España " , "Francia " , "Rumania " , "Portugal ");
 
 
 //foreach clave
