@@ -7,7 +7,10 @@
 </head>
 <body>
     <?php
-    
+
+
+echo "Equipo antes de añadir a otro jugador";
+
 $equipo1 = array (
     'Jordy' => 'Pivot',
     'Jose' => 'Base',
@@ -15,12 +18,19 @@ $equipo1 = array (
     'Dionis' => 'Alero'
 );
 
+echo "<br>";
 foreach ($equipo1 as $position => $element){
     echo $position . ": " . $element . '<br>';
 }
+echo "<br>";
+echo "Equipo después de añadir a otro jugador";
 
+$equipo1 ['Ramona'] = 'Ala';
+echo "<br>";
 
-print_r($equipo1);
+foreach ($equipo1 as $position => $element){
+    echo $position . ": " . $element . '<br>';
+}
 
 ?>
 </body>
