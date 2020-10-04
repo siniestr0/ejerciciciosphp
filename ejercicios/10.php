@@ -9,13 +9,16 @@
     <?php
     
 $equipo1 = array (
-    'Posicion' => 'Base',
-    'Nombre' => 'Jose',
+    'Jordy' => 'Pivot',
+    'Jose' => 'Base',
+    'Elena' => 'Escolta',
+    'Dionis' => 'Alero'
 );
 
-foreach ($equipo1 as $position=>$element){
+foreach ($equipo1 as $position => $element){
     echo $position . ": " . $element . '<br>';
 }
+
 
 print_r($equipo1);
 
