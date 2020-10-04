@@ -7,25 +7,38 @@
 </head>
 <body>
     <?php
-    //Creamos el array
 
+    //Creamos el array
+    echo "Array Inicial";
     $paises = [];
     $paises[0]="España";
-    $paises[1]="Francia";
-    $paises[2]="Rumania";
-    $paises[3]="Portugal";
 
     echo"<br>";
+
     foreach ($paises as $position => $element){
 
         echo $position . ": " . $element . '<br>';  
     }
-
+    echo "Varias formas de imprimir un array" . "<br>";
     echo "var_dump" . "<br>";
     var_dump($paises);
     echo "<br>";
     echo "print_r" . "<br>";
     print_r($paises);
+
+    echo "<br>";
+    echo "Array final despues de añadir nuevos elementos";
+
+    $paises[1]="Rumania";
+    $paises[2]="Francia";
+    $paises[3]="Brasil";
+
+    echo "<br>";
+
+    foreach ($paises as $position => $element){
+
+        echo $position . ": " . $element . '<br>';  
+    }
 
     ?>
 </body>
