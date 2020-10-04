@@ -11,6 +11,7 @@
 
 <form action = "" method = "post">
 
+<!-- si ponemos al final del input un require, este campo será obligatorio-->
 Name: <input type = "text" name = "Name" required><br>
 
 <input type = "submit" value = "Send">
@@ -21,15 +22,15 @@ Name: <input type = "text" name = "Name" required><br>
 echo "<br>";
 /* comprobamos si los datos que vamos a introducir existen o no. */
     if(isset($_POST) && !empty($_POST)){
-        echo "Cheking  ...";
-        echo "Welcome $_POST[Name]";
+        echo "Cheking  ..." . "<br>";
+        echo "Welcome  $_POST[Name]";
         
 /* ahora vamos a imrpimir los resultados  con el <pre>  se muestra en forma lista */
         echo "<pre>";
         print_r($_POST);
     }
      else {
-         echo ".";
+         echo "Name field is require.";
     }    
 ?>
 
