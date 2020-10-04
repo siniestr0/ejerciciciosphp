@@ -7,11 +7,30 @@
 </head>
 <body>
 
+<!-- Creamos el formulario -->
+
+<form action = "" method = "post">
+Tittle: <input type = "text" name = "Tittle"><br>
+Autor: <input type = "text" name = "Author"><br>
+Editorial: <input type = "text" name="Editorial"><br>
+Pages: <input type = "text" name="Pages"><br>
+<input type = "submit" value = "Send">
+
+</form>
+
 <?php
-
-
-
-
+echo "<br>";
+/* comprobamos si los datos que vamos a introducir existen o no. */
+    if(isset($_POST) && !empty($_POST)){
+        echo "Los datos han sido introducidos.";
+        
+/* ahora vamos a imrpimir los resultados  con el <pre>  se muestra en forma lista */
+        echo "<pre>";
+        print_r($_POST);
+    }
+     else {
+         echo "Campos vacíos.";
+    }    
 ?>
 
 </body>
