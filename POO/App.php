@@ -2,27 +2,36 @@
 class App
 {
 
-public function run(){
+  public function run()
+  {
+    if (isset($_GET['method'])) {
+      $method = $_GET['method'];
+    } else {
+      $method = 'fibonacci';
+    }
+    
+    $this->$method();
+  }
 
-  echo "Bienvenido";
-  $this->index();
+public function index (){
 
+  echo "enlaces a los 4 archivos";
 }
 
-
   public function fibonacci(){
+
     $valor1= 0;
     $valor2= 1;
 
-      for ($i=0; $i <= 10 ; $i++) {
-        echo $valor1 . "<br>";
-          $suma = $valor1 + $valor2;
-          $valor1 = $valor2;
-          $valor2 = $suma;
-
-        } 
-
+  for ($i=0; $i <= 1000 ; $i++) {
+    
+      $fibonacci[]= $valor1;
+      $suma = $valor1 + $valor2;
+      $valor1 = $valor2;
+      $valor2 = $suma;
     } 
-}
-
+    // ponemos el link donde queremos guardar los datos de la secuencia
+    include('views/fibonacci.php');
+}    
+    } 
 ?>
