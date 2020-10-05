@@ -9,7 +9,7 @@
     
 <!-- Creamos el formulario -->
 
-<form action = "" method = "post">
+<form action = "13-action.php" method = "post">
 
 <!-- si ponemos al final del input un require, este campo será obligatorio-->
 Name: <input type = "text" name = "Name" required><br>
