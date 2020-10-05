@@ -39,17 +39,17 @@ public function index(){
 
   public function primos(){
 
-
+    include('views/primos.php');
   }
 
   public function factorial(){
 
-    
+    include('views/factorial.php');
   }
 
   public function potencias(){
 
-    
+    include('views/potencias.php');
   }
 
 
