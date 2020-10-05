@@ -25,9 +25,9 @@ public function index(){
 
     $valor1= 0;
     $valor2= 1;
-
+//calculamos solo los primeros 1000 valores, porque por la ram de la maquina, tarda mucho en calcular el millon de valores.
   for ($i=0; $i <= 1000 ; $i++) {
-    
+    // creamos el array fibonacci[] y guardará los valores del bucle.
       $fibonacci[]= $valor1;
       $suma = $valor1 + $valor2;
       $valor1 = $valor2;
@@ -47,7 +47,7 @@ public function index(){
     include('views/factorial.php');
   }
 
-  public function potencias(){
+  public function potencias2(){
 
     include('views/potencias.php');
   }
