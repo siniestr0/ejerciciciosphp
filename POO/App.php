@@ -17,7 +17,6 @@ public function index (){
 
   echo "enlaces a los 4 archivos";
   
-  '<a href="http://ejercicios.local/POO/index.php">Ejecutar función PHP</a>';
   include('views/index.php');
 
 }
