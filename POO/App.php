@@ -7,7 +7,7 @@ class App
     if (isset($_GET['method'])) {
       $method = $_GET['method'];
     } else {
-      $method = 'fibonacci';
+      $method = 'index';
     }
     
     $this->$method();
@@ -16,6 +16,10 @@ class App
 public function index (){
 
   echo "enlaces a los 4 archivos";
+  
+  '<a href="http://ejercicios.local/POO/index.php">Ejecutar función PHP</a>';
+  include('views/index.php');
+
 }
 
   public function fibonacci(){
