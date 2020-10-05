@@ -13,7 +13,7 @@ class App
     $this->$method();
   }
 
-public function index (){
+public function index(){
 
   echo "enlaces a los 4 archivos";
   
@@ -35,6 +35,23 @@ public function index (){
     } 
     // ponemos el link donde queremos guardar los datos de la secuencia
     include('views/fibonacci.php');
-}    
+}  
+
+  public function primos(){
+
+
+  }
+
+  public function factorial(){
+
+    
+  }
+
+  public function potencias(){
+
+    
+  }
+
+
     } 
 ?>
