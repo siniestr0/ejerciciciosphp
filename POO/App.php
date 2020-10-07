@@ -26,25 +26,48 @@ public function index(){
 
     $valor1= 0;
     $valor2= 1;
-//calculamos solo los primeros 1000 valores, porque por la ram de la maquina, tarda mucho en calcular el millon de valores.
-  for ($i=0; $i <= 1000 ; $i++) {
+    $suma=0;
+//calculamos que el fin de la secuencia sea hasta SUMA y que no pase del millón.
+    for ($i=0; $suma <= 1000000 ; $i++) {
     // creamos el array fibonacci[] y guardará los valores del bucle.
-      $fibonacci[]= $valor1;
-      $suma = $valor1 + $valor2;
-      $valor1 = $valor2;
-      $valor2 = $suma;
-    } 
+                
+    $suma = $valor1 + $valor2;
+    $valor1 = $valor2;
+    $valor2 = $suma;
+    $fibonacci[]= $valor1;
+           
+      }
     // ponemos el link donde queremos guardar los datos de la secuencia
     include('views/fibonacci.php');
 }  
 
   public function primos(){
 
+$numero = $_GET['numero'];
+$i = 2;
+$primo = true;
+
+while ( $primo && $i < $numero){
+  $primo = ($numero %$i) != 0;
+  $i ++;
+
+}
+
+if ($primo){
+
+  echo "El numero $numero es primo";
+}
+
+else {
+  echo "El numero $numero no es primo";
+
+}
+
     include('views/primos.php');
   }
 
   public function factorial(){
-
+ 
     include('views/factorial.php');
   }
 
