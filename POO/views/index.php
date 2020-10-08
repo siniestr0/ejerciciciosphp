@@ -6,8 +6,10 @@
 <li> <a href="http://ejercicios.local/POO/index.php?method=factorial"> Factorial </a></li>
 <li> <a href="http://ejercicios.local/POO/index.php?method=potencias"> Potencias </a></li>
 
-<li> Estos son links son del xampp </li>
-<li> <a href="http://ejercicios.local/ejerciciosphp/POO/index.php?method=fibonacci"> Fibonacci </a></li>
+Estos son links de Windows
+<li> <a href="http://localhost/ejerciciciosphp/POO/index.php"> index xampp </a></li>
+<li> <a href="http://localhost/ejerciciciosphp/POO/index.php?method=fibonacci"> Fibonacci </a></li>
+<li> <a href="http://localhost/ejerciciciosphp/POO/index.php?method=primos"> Primos </a></li>
 </ul>
 
 
