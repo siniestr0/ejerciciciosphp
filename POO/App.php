@@ -65,8 +65,18 @@ public function index(){
   }
 
   public function factorial(){
- 
-    include('views/factorial.php');
+      function factorial($numero) {
+        $resultado = 1;
+        for ($i=1; $i <= $numero; $i++) { 
+          $resultado = $resultado * $i;
+        }
+        return $resultado;
+      }
+      echo "El factorial de 10 es " . factorial(10) . "<br>";
+      echo "como 10 se pasa del millón, el más cercano es 9" . "<br>";
+      echo "Y el factorial de 9 es " . factorial(9);
+
+      include('views/factorial.php');
   }
 
   public function potencias2(){

@@ -10,6 +10,7 @@ Estos son links de Windows
 <li> <a href="http://localhost/ejerciciciosphp/POO/index.php"> index xampp </a></li>
 <li> <a href="http://localhost/ejerciciciosphp/POO/index.php?method=fibonacci"> Fibonacci </a></li>
 <li> <a href="http://localhost/ejerciciciosphp/POO/index.php?method=primos"> Primos </a></li>
+<li> <a href="http://localhost/ejerciciciosphp/POO/index.php?method=factorial"> Factorial </a></li>
 </ul>
 
 
