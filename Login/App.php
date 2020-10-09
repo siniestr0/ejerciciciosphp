@@ -7,13 +7,6 @@ class App
 public $user;
 public $password;
 
-    public function __construct($user, $password){
-        
-    $this->name = $user;
-    $this->password = $password;
-
-    }
-
     public function run(){
 
         if (isset($_GET['method'])) {
@@ -37,7 +30,27 @@ public $password;
     public function login (){
 
 
+        include('views/login.php');
     }
+
+    public function auth (){
+
+
+        include('views/auth.php');
+    }
+
+    public function home (){
+
+
+        include('views/home.php');
+    }
+
+    public function logout (){
+
+
+        include('views/logout.php');
+    }
+
 }
 
 ?>
