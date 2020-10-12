@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <form action="" method="GET">
+  <form action="" method="POST">
     <label for="">User</label>
     <input type="text" name="user" required> <br> <!-- pongo require para que sea campo obligatorio-->
     <label for="">Password</label>
@@ -26,13 +26,15 @@
   <?php
 echo "<br>";
 /* comprobamos si los datos que vamos a introducir existen o no. */
-    if(isset($_GET) && !empty($_GET)){
+    if(isset($_POST['user']) && !empty($_POST['user'])){
         echo "Los datos han sido introducidos.";
         
 /* ahora vamos a imrpimir los resultados  con el <pre>  se muestra en forma lista */
 /* con el POST no guarda datos, con el GET, si que hace un login, y pide recordar password. */
         echo "<pre>";
-        print_r($_GET);
+        var_dump($_POST['user']);
+        echo "<br>";
+        var_dump($_POST['password']);
     }
      else {
          echo "Campos vacíos.";
