@@ -29,8 +29,8 @@ public $password;
 
     public function login (){
           
-        if (isset($_COOKIE['name'])) {
-            echo 'Ya estás registrado';
+        if (isset($_COOKIE['user'])) {
+            echo $_COOKIE['user'] . " Ya estás registrado";
         }
 
         include('views/login.php');
@@ -53,7 +53,7 @@ public $password;
 
     public function home (){
 
-        if(isset($_COOKIE)){
+        if(isset($_COOKIE['user'])){
         echo "Bienvenido " . $_COOKIE['user'];
 
     }
@@ -70,8 +70,14 @@ public $password;
         setcookie("user", "$name" , time() -1); 
         setcookie("password", "$password", time() -1);
 
-        header("location: index.php");
-        include('views/logout.php');
+        if(isset($_COOKIE)){
+            echo "No se ha borrado la cookie";
+
+        }else{
+            echo "Se ha borrado la cookie";
+        }
+
+        header("location: http://ejercicios.local/Login/index.php?method=logout");
     }
 
 
