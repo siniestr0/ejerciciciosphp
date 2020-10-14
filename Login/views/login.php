@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <form action="" method="POST">
+  <form action="index.php?method=auth" method="POST">
     <label for="">User</label>
     <input type="text" name="user" required> <br> <!-- pongo require para que sea campo obligatorio-->
     <label for="">Password</label>
@@ -22,20 +22,6 @@
     <input type="submit">
   </form>
 
-
-<?php
-
-setcookie("user", "$name" , time() + 3600); //ponemos caducidad a la cookie
-setcookie("password", "$password", time() + 3600);
-
-if (isset($_COOKIE["user"])){
-  echo $_COOKIE["user"] . " Se ha conectado.";
-
-}else {
-  echo "Usuario no encontrado";
-}
-
-?>
 
 </body>
 </html>
