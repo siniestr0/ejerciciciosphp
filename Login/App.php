@@ -51,6 +51,7 @@ public $password;
         include('views/logout.php');
     }
 
+
 }
 
 ?>

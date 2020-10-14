@@ -23,22 +23,19 @@
   </form>
 
 
-  <?php
-echo "<br>";
-/* comprobamos si los datos que vamos a introducir existen o no. */
-    if(isset($_POST['user']) && !empty($_POST['user'])){
-        echo "Los datos han sido introducidos.";
-        
-/* ahora vamos a imrpimir los resultados  con el <pre>  se muestra en forma lista */
-/* con el POST no guarda datos, con el GET, si que hace un login, y pide recordar password. */
-        echo "<pre>";
-        var_dump($_POST['user']);
-        echo "<br>";
-        var_dump($_POST['password']);
-    }
-     else {
-         echo "Campos vacíos.";
-    }    
+<?php
+
+setcookie("user", "$name" , time() + 3600); //ponemos caducidad a la cookie
+setcookie("password", "$password", time() + 3600);
+
+if (isset($_COOKIE["user"])){
+  echo $_COOKIE["user"] . " Se ha conectado.";
+
+}else {
+  echo "Usuario no encontrado";
+}
+
 ?>
+
 </body>
 </html>
