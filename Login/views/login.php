@@ -22,6 +22,8 @@
     <input type="submit">
   </form>
 
-  <a href="http://ejercicios.local/Login/index.php?=method=logout"> Cerrar Sesion
+ 
+  <a href="index.php?=method=logout"> Cerrar Sesion
+
 </body>
 </html>

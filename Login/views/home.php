@@ -13,7 +13,7 @@
 <body>
     <h1>Hola ! La cookie ha sido creada </h1>
 
-    <a href="http://ejercicios.local/Login/index.php?=method=logout"> Cerrar Sesion
+    <a href="index.php?=method=logout"> Cerrar Sesion
 </body>
 </html>
 

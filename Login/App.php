@@ -28,12 +28,15 @@ public $password;
     }
 
     public function login (){
-          
+
         if (isset($_COOKIE['user'])) {
             echo $_COOKIE['user'] . " Ya estás registrado";
-        }
-
-        include('views/login.php');
+          }
+      
+        //Correcion Rafa, y funciona en windows y linux
+       header ("location: index.php?method=home");
+       
+        
     }
 
     public function auth (){
@@ -47,8 +50,8 @@ public $password;
         setcookie("password", "$password", time() + 3600);
 
         
-        header ("location: http://ejercicios.local/Login/index.php?method=home");
-        include('views/auth.php');
+        header ("location: index.php?method=home");
+        
     }
 
     public function home (){
@@ -77,7 +80,7 @@ public $password;
             echo "Se ha borrado la cookie";
         }
 
-        header("location: http://ejercicios.local/Login/index.php?method=logout");
+        header("location: index.php?method=login");
     }
 
 
