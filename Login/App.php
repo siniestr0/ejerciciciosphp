@@ -13,7 +13,7 @@ public $password;
         $method = $_GET['method'];
         } else {
         // por defecto cargará el metodo index, y cargará todo lo que haya en ese metodo.
-        $method = 'index';
+        $method = 'login';
         }
         
         $this->$method();
@@ -21,8 +21,6 @@ public $password;
 
     public function index(){
 
-    echo "enlaces a los 4 archivos";
-    // index.php tiene unos enlaces para ver los resultados de todas las funciones.
     include('views/index.php');
 
     }
@@ -34,9 +32,7 @@ public $password;
           }
       
         //Correcion Rafa, y funciona en windows y linux
-       header ("location: index.php?method=home");
-       
-        
+        header("location: index.php?method=home");        
     }
 
     public function auth (){
@@ -49,7 +45,6 @@ public $password;
         setcookie("user", "$name" , time() + 3600); //ponemos caducidad a la cookie
         setcookie("password", "$password", time() + 3600);
 
-        
         header ("location: index.php?method=home");
         
     }
