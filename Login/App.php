@@ -21,7 +21,8 @@ public $password;
 
     public function index(){
 
-    include('views/index.php');
+    //include('views/index.php');
+    include('http://localhost/ejerciciciosphp/Login/index.php');
 
     }
 
@@ -56,7 +57,8 @@ public $password;
 
     }
 
-        include('views/home.php');
+        //include('views/home.php');
+        include('http://localhost/ejerciciciosphp/Login/views/home.php');
     }
 
     public function logout (){
@@ -67,13 +69,6 @@ public $password;
         // vamos a caducar la cookie para que se borre
         setcookie("user", "$name" , time() -1); 
         setcookie("password", "$password", time() -1);
-
-        if(isset($_COOKIE)){
-            echo "No se ha borrado la cookie";
-
-        }else{
-            echo "Se ha borrado la cookie";
-        }
 
         header("location: index.php?method=login");
     }
