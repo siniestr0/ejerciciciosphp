@@ -21,9 +21,8 @@ public $password;
 
     public function index(){
 
-    //include('views/index.php');
-    include('http://localhost/ejerciciciosphp/Login/index.php');
-
+    include('index.php');
+    
     }
 
     public function login (){
@@ -57,8 +56,7 @@ public $password;
 
     }
 
-        //include('views/home.php');
-        include('http://localhost/ejerciciciosphp/Login/views/home.php');
+        include('views/home.php');
     }
 
     public function logout (){
@@ -70,7 +68,7 @@ public $password;
         setcookie("user", "$name" , time() -1); 
         setcookie("password", "$password", time() -1);
 
-        header("location: index.php?method=login");
+        header("location: ?method=login");
     }
 
 

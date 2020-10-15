@@ -9,6 +9,8 @@
     <h1>Hola ! La cookie ha sido creada </h1>
 
     <a href="index.php?=method=logout"> Cerrar Sesion
+    <br>
+    <a href="views/login.php"> Login
 </body>
 </html>
 
