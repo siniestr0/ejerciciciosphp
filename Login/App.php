@@ -28,11 +28,17 @@ public $password;
     public function login (){
 
         if (isset($_COOKIE['user'])) {
-            echo $_COOKIE['user'] . " Ya estás registrado";
+            
+            //no se puede poner echos antes de ningun header
+            //Correcion Rafa, y funciona en windows y linux
+            header("location: index.php?method=home");
+
+            return;
+
           }
       
-        //Correcion Rafa, y funciona en windows y linux
-        header("location: index.php?method=home");        
+        include('views/login.php');
+                
     }
 
     public function auth (){

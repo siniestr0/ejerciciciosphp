@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <form action="index.php?=method=auth" method="POST">
+  <form action="index.php?method=auth" method="POST">
     <label for="">User</label>
     <input type="text" name="user" required> <br> <!-- pongo require para que sea campo obligatorio-->
     <label for="">Password</label>
@@ -18,7 +18,7 @@
   </form>
 
  
-  <a href="index.php?=method=logout"> Cerrar Sesion
+  <a href="index.php?method=logout"> Cerrar Sesion
 
 </body>
 </html>
