@@ -11,8 +11,6 @@
     <a href="index.php?method=logout"> Cerrar Sesion
     <br>
     <a href="index.php?method=login"> Login
-    
+
 </body>
 </html>
-
-
