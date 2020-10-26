@@ -3,17 +3,13 @@
 class App
 {
 
-//Atributos publicos
-public $user;
-public $password;
-
     public function run(){
 
         if (isset($_GET['method'])) {
         $method = $_GET['method'];
         } else {
         // por defecto cargará el metodo index, y cargará todo lo que haya en ese metodo.
-        $method = 'login';
+        $method = 'index';
         }
         
         $this->$method();
@@ -65,17 +61,28 @@ public $password;
         include('views/home.php');
     }
 
-    public function logout (){
+    public function new (){
 
-        $name = $_POST['name'];
-        $password = $_POST['password'];
 
-        // vamos a caducar la cookie para que se borre
-        setcookie("user", "$name" , time() -1); 
-        setcookie("password", "$password", time() -1);
-
-        header("location: ?method=login");
     }
+
+    public function delete () {
+
+
+    }
+
+    public function empty () {
+
+
+    }
+
+    public function close () {
+
+
+
+    }
+
+
 
 
 }
