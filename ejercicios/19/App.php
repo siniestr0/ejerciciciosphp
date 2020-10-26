@@ -5,11 +5,6 @@ class App {
 public $user;
 public $password;
 
-public function __construct(){
-
-    session_start(); 
-
-  }
 
 //Siempre se crea la funcion run, para que se ejecute por defecto el método index
 public function run(){
