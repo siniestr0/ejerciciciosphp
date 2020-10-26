@@ -44,11 +44,11 @@ public $password;
     public function auth (){
 
         //creamos las variables y donde queremos guardar los datos del formulario
-        $name = $_POST['user'];
+        $user = $_POST['user'];
         $password = $_POST['password'];
 
         // para poner una cookie que dure un año se pondria esto (60*60*24*360)
-        setcookie("user", "$name" , time() + 3600); //ponemos caducidad a la cookie
+        setcookie("user", "$user" , time() + 3600); //ponemos caducidad a la cookie
         setcookie("password", "$password", time() + 3600);
 
         header ("location: index.php?method=home");
@@ -67,11 +67,11 @@ public $password;
 
     public function logout (){
 
-        $name = $_POST['name'];
+        $user = $_POST['user'];
         $password = $_POST['password'];
 
         // vamos a caducar la cookie para que se borre
-        setcookie("user", "$name" , time() -1); 
+        setcookie("user", "$user" , time() -1); 
         setcookie("password", "$password", time() -1);
 
         header("location: ?method=login");
