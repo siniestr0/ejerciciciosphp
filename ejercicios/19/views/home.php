@@ -23,6 +23,7 @@
         foreach ($deseos as $id => $deseo) {
 
             //Esta linea es para borrar la cookie sabiendo el id, que se muestra por el foreach AS $ID
+            //copiado de rafa para borrar un deseo de un array
             echo "<li> Wish num $id: " . $deseo . ' <a href="?method=delete&id=' . $id . '"> delete</a> </li>';
         }
 
@@ -33,6 +34,7 @@
     } 
 
 ?>
+
 <h4><a href="?method=empty">Clear List</a></h4> 
 
   </ul>
