@@ -15,7 +15,7 @@
     //forma3
     $jugadoresEquipo = ['pepe', 'juan'];
     //forma4
-$jugadoresEquipo = [0 => 'pepe', 1 => 'juan'];
+    $jugadoresEquipo = [0 => 'pepe', 1 => 'juan'];
 
 // git branch
 // git checkout nombreRamaBuena
